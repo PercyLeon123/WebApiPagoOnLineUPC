@@ -38,3 +38,43 @@ C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusines
 C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBEntity.dll
 C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBContext.pdb
 C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBEntity.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\appsettings.Development.json
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\appsettings.json
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusiness.API.exe
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusiness.API.deps.json
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusiness.API.runtimeconfig.json
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusiness.API.runtimeconfig.dev.json
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusiness.API.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\ref\PagoOnLineBusiness.API.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusiness.API.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\Dapper.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\System.Data.SqlClient.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\runtimes\win-arm64\native\sni.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\runtimes\win-x64\native\sni.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\runtimes\win-x86\native\sni.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBContext.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBEntity.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBContext.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\bin\Debug\net5.0\PagoOnLineBusisness.DBEntity.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.csproj.AssemblyReference.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.AssemblyInfoInputs.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.AssemblyInfo.cs
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.csproj.CoreCompileInputs.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.MvcApplicationPartsAssemblyInfo.cs
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.MvcApplicationPartsAssemblyInfo.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\staticwebassets\PagoOnLineBusiness.API.StaticWebAssets.Manifest.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\staticwebassets\PagoOnLineBusiness.API.StaticWebAssets.xml
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\scopedcss\bundle\PagoOnLineBusiness.API.styles.css
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.RazorTargetAssemblyInfo.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.csproj.CopyComplete
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\ref\PagoOnLineBusiness.API.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusiness.API\obj\Debug\net5.0\PagoOnLineBusiness.API.genruntimeconfig.cache

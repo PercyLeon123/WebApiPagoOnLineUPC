@@ -7,3 +7,12 @@ C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusisne
 C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.csproj.CoreCompileInputs.cache
 C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.dll
 C:\Aplicaciones\net Core\PagoEnLineaUPC\PagoOnLineBusiness.API\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\bin\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.deps.json
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\bin\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\bin\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.pdb
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.csproj.AssemblyReference.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.AssemblyInfoInputs.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.AssemblyInfo.cs
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.csproj.CoreCompileInputs.cache
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.dll
+C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBEntity\obj\Debug\netstandard2.0\PagoOnLineBusisness.DBEntity.pdb

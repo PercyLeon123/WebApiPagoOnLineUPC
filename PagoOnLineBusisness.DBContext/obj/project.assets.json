@@ -998,39 +998,35 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\pleon\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Aplicaciones\\net Core\\PagoEnLineaUPC\\PagoOnLineBusiness.API\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
+      "projectUniqueName": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
       "projectName": "PagoOnLineBusisness.DBContext",
-      "projectPath": "C:\\Aplicaciones\\net Core\\PagoEnLineaUPC\\PagoOnLineBusiness.API\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
-      "packagesPath": "C:\\Users\\pleon\\.nuget\\packages\\",
-      "outputPath": "C:\\Aplicaciones\\net Core\\PagoEnLineaUPC\\PagoOnLineBusiness.API\\PagoOnLineBusisness.DBContext\\obj\\",
+      "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
+      "packagesPath": "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\",
+      "outputPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\pleon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Users\\jfaustor.COSAPI.COM.PE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://packagesource": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Aplicaciones\\net Core\\PagoEnLineaUPC\\PagoOnLineBusiness.API\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj": {
-              "projectPath": "C:\\Aplicaciones\\net Core\\PagoEnLineaUPC\\PagoOnLineBusiness.API\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj"
+            "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj": {
+              "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj"
             }
           }
         }
@@ -1077,7 +1073,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,6 +16,8 @@ namespace PagoOnLineBusisness.DBEntity.Model
         public string telefono2 { get; set; }
         public string telefono3 { get; set; }
 
+        public string telefono4 { get; set; }
+
         public string correo { get; set; }
     }
 }

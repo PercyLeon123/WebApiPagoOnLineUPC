@@ -11,9 +11,9 @@ using System.Text;
 
 namespace PagoOnLineBusisness.DBContext.Repository
 {
-    public class UserRepository : BaseRepository, IUserRepository
+    public class ContribuyenteRepository : BaseRepository, IContribuyenteRepository
     {
-        public ResponseBase Insert(EntityUser user)
+        public ResponseBase actualiza(EntityContribuyente contribuyente)
         {
             var returnEntity = new ResponseBase();
 
@@ -21,33 +21,31 @@ namespace PagoOnLineBusisness.DBContext.Repository
             {
                 using (var db = GetSqlConnection())
                 {
-                    const string sql = @"usp_InsertarUsuario";
+                    const string sql = @"usp_updatecontribuyente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@IDUSUARIO", dbType: DbType.Int32, direction: ParameterDirection.Output);
-                    p.Add(name: "@LOGINUSUARIO", value: user.LoginUsuario, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@PASSWORDUSUARIO", value: user.PasswordUsuario, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@IDPERFIL", value: int.Parse(user.IdPerfil), dbType: DbType.Int32, direction: ParameterDirection.Input);
-                    p.Add(name: "@NOMBRES", value: user.Nombres, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@APELLIDOPATERNO", value: user.ApellidoPaterno, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@APELLIDOMATERNO", value: user.ApellidoMaterno, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@DOCUMENTOIDENTIDAD", value: user.DocumentoIdentidad, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@USUARIOCREA", value: 1, dbType: DbType.Int32, direction: ParameterDirection.Input);
-
+                    p.Add(name: "@id", value: contribuyente.codigocont, direction: ParameterDirection.Output);
+                    p.Add(name: "@dir_domicilio", value: contribuyente.dirdomicilio, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@telefono1", value: contribuyente.telefono1, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@telefono2", value: contribuyente.telefono2, dbType: DbType.Int32, direction: ParameterDirection.Input);
+                    p.Add(name: "@telefono3", value: contribuyente.telefono3, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@telefono4", value: contribuyente.telefono4, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@correo", value: contribuyente.correo, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 
-                    int idUsuario = p.Get<int>("@IDUSUARIO");
+                    int idresultado = p.Get<int>("@resultado");
 
-                    if(idUsuario > 0)
+                    if(idresultado > 0)
                     {
                         returnEntity.isSuccess = true;
                         returnEntity.errorCode = "0000";
                         returnEntity.errorMessage = string.Empty;
                         returnEntity.data = new
                         {
-                            id = idUsuario,
-                            nombre = user.Nombres
+                            idresultado = idresultado,
+                            id = contribuyente.codigocont
                         };
                     }
                     else

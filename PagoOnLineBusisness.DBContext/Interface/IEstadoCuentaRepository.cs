@@ -10,6 +10,7 @@ namespace PagoOnLineBusisness.DBContext.Interface
     public interface IEstadoCuentaRepository
     {
         ResponseBase EstadoCuentaPendiente(EntityEstadoCuenta estadoCuenta);
+        ResponseBase EstadoCuentaHistorico(EntityEstadoCuenta estadoCuenta);
     }
 
 

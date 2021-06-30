@@ -52,6 +52,18 @@ namespace PagoOnLineBusiness.API.Controllers
             return Json(ret);
         }
 
+
+        [Produces("application/json")]
+        [AllowAnonymous]
+        [HttpPost]
+        [Route("consulta")]
+        public ActionResult consulta(EntityContribuyente contribuyente)
+        {
+            var ret = _ContribuyenteRepository.consulta(contribuyente);
+
+            return Json(ret);
+        }
+
     }
 
 

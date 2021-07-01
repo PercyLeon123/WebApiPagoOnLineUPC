@@ -9,7 +9,7 @@ namespace PagoOnLineBusisness.DBContext.Interface
 {
     public interface IEstadoCuentaPendienteRepository
     {
-        ResponseBase EstadoCuentaPendiente(EntityEstadoCuenta estadoCuenta);
+        ResponseBase EstadoCuentaPendiente();
         
     }
 

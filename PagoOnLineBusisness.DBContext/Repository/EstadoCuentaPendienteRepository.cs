@@ -15,7 +15,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
     {
 
         
-        public ResponseBase EstadoCuentaPendiente(EntityEstadoCuenta estadoCuenta)
+        public ResponseBase EstadoCuentaPendiente()
         {
             var returnEntity = new ResponseBase();
 
@@ -26,7 +26,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_estadocuentapendiente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente", value: estadoCuenta.codigocont, direction: ParameterDirection.Output);                    
+                    p.Add(name: "@idcontribuyente", direction: ParameterDirection.Output);                    
                     p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
@@ -40,8 +40,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
                         returnEntity.errorMessage = string.Empty;
                         returnEntity.data = new
                         {
-                            idresultado = idresultado,
-                            id = estadoCuenta.codigocont
+                            idresultado = idresultado
                         };
                     }
                     else

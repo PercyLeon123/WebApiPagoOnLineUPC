@@ -14,7 +14,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
     public class EstadoCuentaRepository : BaseRepository, IEstadoCuentaRepository
     {
 
-        public ResponseBase EstadoCuentaHistorico(EntityEstadoCuenta estadoCuenta)
+        public ResponseBase EstadoCuentaHistorico()
         {
             var returnEntity = new ResponseBase();
 
@@ -25,12 +25,12 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_estadocuentahistorico";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente", value: estadoCuenta.codigocont, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@desde", value: estadoCuenta.fecha_pago, dbType: DbType.DateTime, direction: ParameterDirection.Input);
-                    p.Add(name: "@hasta", value: estadoCuenta.fecha_pago, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                    p.Add(name: "@idcontribuyente", dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@desde",  dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                    p.Add(name: "@hasta",  dbType: DbType.DateTime, direction: ParameterDirection.Input);
                     p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                    db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    db.Query<EntityEstadoCuenta>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 
                     int idresultado = p.Get<int>("@resultado");
 
@@ -41,8 +41,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
                         returnEntity.errorMessage = string.Empty;
                         returnEntity.data = new
                         {
-                            idresultado = idresultado,
-                            id = estadoCuenta.codigocont
+                            idresultado = idresultado
                         };
                     }
                     else

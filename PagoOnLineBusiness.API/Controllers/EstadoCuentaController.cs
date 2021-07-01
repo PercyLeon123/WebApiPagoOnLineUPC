@@ -43,11 +43,11 @@ namespace PagoOnLineBusiness.API.Controllers
         /// <returns></returns>
         [Produces("application/json")]
         [AllowAnonymous]
-        [HttpPost]
+        [HttpGet]
         [Route("EstadoCuentaHistorico")]
-        public ActionResult EstadoCuentaHistorico(EntityEstadoCuenta estadoCuenta)
+        public ActionResult EstadoCuentaHistorico( )
         {
-            var ret = _EstadoCuentaRepository.EstadoCuentaHistorico(estadoCuenta);
+            var ret = _EstadoCuentaRepository.EstadoCuentaHistorico();
 
             return Json(ret);
         }

@@ -9,7 +9,7 @@ namespace PagoOnLineBusisness.DBContext.Interface
 {
     public interface IContribuyenteloginRepository
     {
-        ResponseBase logincontribuyente(EntityContribuyentelogin contribuyentelogin);
+        ResponseBase logincontribuyente();
         
     }
 

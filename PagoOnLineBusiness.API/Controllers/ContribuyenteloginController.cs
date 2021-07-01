@@ -43,11 +43,11 @@ namespace PagoOnLineBusiness.API.Controllers
         /// <returns></returns>
         [Produces("application/json")]
         [AllowAnonymous]
-        [HttpPost]
+        [HttpGet]
         [Route("LoginContribuyente")]
-        public ActionResult logincontribuyente(EntityContribuyentelogin contribuyentelogin)
+        public ActionResult logincontribuyente( )
         {
-            var ret = _ContribuyenteloginRepository.logincontribuyente(contribuyentelogin);
+            var ret = _ContribuyenteloginRepository.logincontribuyente();
 
             return Json(ret);
         }

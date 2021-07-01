@@ -14,7 +14,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
     public class ContribuyenteloginRepository : BaseRepository, IContribuyenteloginRepository
     {
 
-        public ResponseBase logincontribuyente(EntityContribuyentelogin contribuyentelogin)
+        public ResponseBase logincontribuyente()
         {
             var returnEntity = new ResponseBase();
 
@@ -25,8 +25,8 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_loginContribuyente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@logincontribuyente", value: contribuyentelogin.login_cont, direction: ParameterDirection.Output);
-                    p.Add(name: "@contracena", value: contribuyentelogin.contracena, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@logincontribuyente", dbType:DbType.String, direction: ParameterDirection.Output);
+                    p.Add(name: "@contracena",  dbType: DbType.String, direction: ParameterDirection.Input);
                     p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
@@ -40,8 +40,8 @@ namespace PagoOnLineBusisness.DBContext.Repository
                         returnEntity.errorMessage = string.Empty;
                         returnEntity.data = new
                         {
-                            idresultado = idresultado,
-                            id = contribuyentelogin.codigocont
+                            idresultado = idresultado
+                            
                         };
                     }
                     else

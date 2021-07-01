@@ -14,7 +14,8 @@ namespace PagoOnLineBusisness.DBContext.Repository
     public class ContribuyenteRepository : BaseRepository, IContribuyenteRepository
     {
 
-        public ResponseBase consulta(EntityContribuyente contribuyente)
+
+        public ResponseBase consulta()
         {
             var returnEntity = new ResponseBase();
 
@@ -25,10 +26,10 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_datoscontribuyente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente", value: contribuyente.codigocont, dbType: DbType.String, direction: ParameterDirection.Input);                    
+                    p.Add(name: "@idcontribuyente",  dbType: DbType.String, direction: ParameterDirection.Input);                    
                     p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                    db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    db.Query<EntityContribuyente>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 
                     int idresultado = p.Get<int>("@resultado");
 
@@ -39,8 +40,8 @@ namespace PagoOnLineBusisness.DBContext.Repository
                         returnEntity.errorMessage = string.Empty;
                         returnEntity.data = new
                         {
-                            idresultado = idresultado,
-                            id = contribuyente.codigocont
+                            idresultado = idresultado
+                           
                         };
                     }
                     else
@@ -117,5 +118,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
 
             return returnEntity;
         }
+
+        
     }
 }

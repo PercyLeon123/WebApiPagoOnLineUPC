@@ -25,7 +25,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_datoscontribuyente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente", value: contribuyente.codigocont, direction: ParameterDirection.Output);                    
+                    p.Add(name: "@idcontribuyente", value: contribuyente.codigocont, dbType: DbType.String, direction: ParameterDirection.Input);                    
                     p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();

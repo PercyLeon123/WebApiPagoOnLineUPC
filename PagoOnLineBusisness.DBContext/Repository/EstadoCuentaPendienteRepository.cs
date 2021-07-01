@@ -11,10 +11,11 @@ using System.Text;
 
 namespace PagoOnLineBusisness.DBContext.Repository
 {
-    public class EstadoCuentaRepository : BaseRepository, IEstadoCuentaRepository
+    public class EstadoCuentaPendienteRepository : BaseRepository, IEstadoCuentaPendienteRepository
     {
 
-        public ResponseBase EstadoCuentaHistorico(EntityEstadoCuenta estadoCuenta)
+        
+        public ResponseBase EstadoCuentaPendiente(EntityEstadoCuenta estadoCuenta)
         {
             var returnEntity = new ResponseBase();
 
@@ -22,19 +23,17 @@ namespace PagoOnLineBusisness.DBContext.Repository
             {
                 using (var db = GetSqlConnection())
                 {
-                    const string sql = @"usp_estadocuentahistorico";
+                    const string sql = @"usp_estadocuentapendiente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente", value: estadoCuenta.codigocont, dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@desde", value: estadoCuenta.fecha_pago, dbType: DbType.DateTime, direction: ParameterDirection.Input);
-                    p.Add(name: "@hasta", value: estadoCuenta.fecha_pago, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                    p.Add(name: "@idcontribuyente", value: estadoCuenta.codigocont, direction: ParameterDirection.Output);                    
                     p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 
                     int idresultado = p.Get<int>("@resultado");
 
-                    if (idresultado > 0)
+                    if(idresultado > 0)
                     {
                         returnEntity.isSuccess = true;
                         returnEntity.errorCode = "0000";
@@ -54,7 +53,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     }
                 }
             }
-            catch (Exception ex)
+            catch(Exception ex)
             {
                 returnEntity.isSuccess = false;
                 returnEntity.errorCode = "0001";
@@ -64,6 +63,5 @@ namespace PagoOnLineBusisness.DBContext.Repository
 
             return returnEntity;
         }
-      
     }
 }

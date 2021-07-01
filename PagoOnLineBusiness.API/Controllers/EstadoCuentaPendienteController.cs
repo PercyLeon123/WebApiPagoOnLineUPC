@@ -17,40 +17,42 @@ namespace PagoOnLineBusiness.API.Controllers
     [Produces("application/json")]
     [Route("api/Contribuyente")]
     [ApiController]
-    public class EstadoCuentaController : Controller
+    public class EstadoCuentaPendienteController : Controller
     {
 
         /// <summary>
         /// Constructor
         /// </summary>
-        protected readonly IEstadoCuentaRepository _EstadoCuentaRepository;
+        protected readonly IEstadoCuentaPendienteRepository _EstadoCuentaPendienteRepository;
 
 
         /// <summary>
         /// 
         /// </summary>
         
-        public EstadoCuentaController(IEstadoCuentaRepository EstadoCuentaRepository)
+        public EstadoCuentaPendienteController(IEstadoCuentaPendienteRepository EstadoCuentaPendienteRepository)
         {
-            _EstadoCuentaRepository = EstadoCuentaRepository;
+            _EstadoCuentaPendienteRepository = EstadoCuentaPendienteRepository;
 
         }
 
         /// <summary>
         /// 
-  
-
+        /// </summary>
+        
         /// <returns></returns>
         [Produces("application/json")]
         [AllowAnonymous]
         [HttpPost]
-        [Route("EstadoCuentaHistorico")]
-        public ActionResult EstadoCuentaHistorico(EntityEstadoCuenta estadoCuenta)
+        [Route("EstadoCuentaPendiente")]
+        public ActionResult EstadoCuentaPendiente(EntityEstadoCuenta estadoCuenta)
         {
-            var ret = _EstadoCuentaRepository.EstadoCuentaHistorico(estadoCuenta);
+            var ret = _EstadoCuentaPendienteRepository.EstadoCuentaPendiente(estadoCuenta);
 
             return Json(ret);
         }
+
+
 
     }
 }

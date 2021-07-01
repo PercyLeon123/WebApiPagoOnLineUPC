@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using PagoOnLineBusisness.DBContext;
 using PagoOnLineBusisness.DBContext.Interface;
+using PagoOnLineBusisness.DBEntity;
 using PagoOnLineBusisness.DBEntity.Model;
 using System.Collections.Generic;
 using System.Linq;
@@ -42,9 +44,11 @@ namespace PagoOnLineBusiness.API.Controllers
         /// <param name="user"></param>
         /// <returns></returns>
         [Produces("application/json")]
-        [AllowAnonymous]
-        [HttpPost]
         [Route("actualiza")]
+        [HttpPost]
+        [AllowAnonymous]
+        
+        
         public ActionResult actualiza(EntityContribuyente contribuyente)
         {
             var ret = _ContribuyenteRepository.actualiza(contribuyente);

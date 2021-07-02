@@ -15,9 +15,10 @@ namespace PagoOnLineBusisness.DBContext.Repository
     {
 
 
-        public ResponseBase consulta()
+        public ResponseBase consulta(string idcontribuyente, int retorno)
         {
             var returnEntity = new ResponseBase();
+            var EntityContribuyentes = new List<EntityContribuyente>();
 
             try
             {
@@ -26,10 +27,11 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_datoscontribuyente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente",  dbType: DbType.String, direction: ParameterDirection.Input);                    
-                    p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
+                    p.Add(name: "@idcontribuyente",value:idcontribuyente,  dbType: DbType.String, direction: ParameterDirection.Input);                    
+                    p.Add(name: "@resultado", value:retorno,dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                    db.Query<EntityContribuyente>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    EntityContribuyentes = db.Query<EntityContribuyente>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
+
 
                     int idresultado = p.Get<int>("@resultado");
 
@@ -38,11 +40,8 @@ namespace PagoOnLineBusisness.DBContext.Repository
                         returnEntity.isSuccess = true;
                         returnEntity.errorCode = "0000";
                         returnEntity.errorMessage = string.Empty;
-                        returnEntity.data = new
-                        {
-                            idresultado = idresultado
-                           
-                        };
+                        returnEntity.data = EntityContribuyentes;
+                       
                     }
                     else
                     {

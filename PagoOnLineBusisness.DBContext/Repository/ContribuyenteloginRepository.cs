@@ -17,6 +17,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
         public ResponseBase logincontribuyente(string login, string contracena, int retorno)
         {
             var returnEntity = new ResponseBase();
+            var entitieslogin = new List<EntityContribuyentelogin>();
 
             try
             {
@@ -29,7 +30,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     p.Add(name: "@contracena", value:contracena, dbType: DbType.String, direction: ParameterDirection.Input);
                     p.Add(name: "@resultado", value:retorno,dbType: DbType.Int32, direction: ParameterDirection.Output);
 
-                    db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+                    entitieslogin= db.Query<EntityContribuyentelogin>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
 
                     int idresultado = p.Get<int>("@resultado");
 
@@ -38,11 +39,9 @@ namespace PagoOnLineBusisness.DBContext.Repository
                         returnEntity.isSuccess = true;
                         returnEntity.errorCode = "0000";
                         returnEntity.errorMessage = string.Empty;
-                        returnEntity.data = new
-                        {
-                            idresultado = idresultado
-                            
-                        };
+                        returnEntity.data = entitieslogin;
+
+
                     }
                     else
                     {

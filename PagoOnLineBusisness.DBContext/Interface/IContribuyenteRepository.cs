@@ -13,7 +13,7 @@ namespace PagoOnLineBusisness.DBContext.Interface
     public interface IContribuyenteRepository
     {
         ResponseBase actualiza(EntityContribuyente contribuyente);
-        ResponseBase consulta();
+        ResponseBase consulta(string idcontribuyente , int retorno);
         
     }
 

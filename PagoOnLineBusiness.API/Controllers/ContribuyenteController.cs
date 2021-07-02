@@ -61,9 +61,9 @@ namespace PagoOnLineBusiness.API.Controllers
         [AllowAnonymous]
         [HttpGet]
         [Route("consulta")]
-        public ActionResult consulta()
+        public ActionResult consulta(string idcontribuyente, int retorno)
         {
-            var ret = _ContribuyenteRepository.consulta();
+            var ret = _ContribuyenteRepository.consulta(idcontribuyente,retorno);
 
             return Json(ret);
         }

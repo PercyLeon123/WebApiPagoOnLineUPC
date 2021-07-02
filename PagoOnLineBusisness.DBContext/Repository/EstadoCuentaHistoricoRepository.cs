@@ -11,10 +11,10 @@ using System.Text;
 
 namespace PagoOnLineBusisness.DBContext.Repository
 {
-    public class EstadoCuentaRepository : BaseRepository, IEstadoCuentaRepository
+    public class EstadoCuentaHistoricoRepository : BaseRepository, IEstadoCuentaHistoricoRepository
     {
 
-        public ResponseBase EstadoCuentaHistorico()
+        public ResponseBase EstadoCuentaHistorico(string idcontribuyente, DateTime fdesde, DateTime fhasta, int retorno)
         {
             var returnEntity = new ResponseBase();
 
@@ -25,10 +25,10 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_estadocuentahistorico";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente", dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@desde",  dbType: DbType.DateTime, direction: ParameterDirection.Input);
-                    p.Add(name: "@hasta",  dbType: DbType.DateTime, direction: ParameterDirection.Input);
-                    p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
+                    p.Add(name: "@idcontribuyente",value: idcontribuyente, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@desde", value:fdesde, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                    p.Add(name: "@hasta", value:fhasta, dbType: DbType.DateTime, direction: ParameterDirection.Input);
+                    p.Add(name: "@resultado",value:retorno, dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityEstadoCuenta>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 

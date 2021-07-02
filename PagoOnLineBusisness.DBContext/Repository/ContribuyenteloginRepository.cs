@@ -14,7 +14,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
     public class ContribuyenteloginRepository : BaseRepository, IContribuyenteloginRepository
     {
 
-        public ResponseBase logincontribuyente()
+        public ResponseBase logincontribuyente(string login, string contracena, int retorno)
         {
             var returnEntity = new ResponseBase();
 
@@ -25,9 +25,9 @@ namespace PagoOnLineBusisness.DBContext.Repository
                     const string sql = @"usp_loginContribuyente";
 
                     var p = new DynamicParameters();
-                    p.Add(name: "@logincontribuyente", dbType:DbType.String, direction: ParameterDirection.Output);
-                    p.Add(name: "@contracena",  dbType: DbType.String, direction: ParameterDirection.Input);
-                    p.Add(name: "@resultado", dbType: DbType.Int32, direction: ParameterDirection.Output);
+                    p.Add(name: "@logincontribuyente", value:login,dbType:DbType.String, direction: ParameterDirection.Output);
+                    p.Add(name: "@contracena", value:contracena, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@resultado", value:retorno,dbType: DbType.Int32, direction: ParameterDirection.Output);
 
                     db.Query<EntityUser>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
 

@@ -7,10 +7,11 @@ using System.Text;
 
 namespace PagoOnLineBusisness.DBContext.Interface
 {
-    public interface IEstadoCuentaRepository
+    public interface IEstadoCuentaHistoricoRepository
     {
         
-        ResponseBase EstadoCuentaHistorico();
+        ResponseBase EstadoCuentaHistorico(string idcontribuyente, DateTime fdesde , DateTime fhasta , int retorno);
+       
     }
 
 

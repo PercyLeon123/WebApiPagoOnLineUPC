@@ -17,20 +17,20 @@ namespace PagoOnLineBusiness.API.Controllers
     [Produces("application/json")]
     [Route("api/Contribuyente")]
     [ApiController]
-    public class EstadoCuentaController : Controller
+    public class EstadoCuentaHistoricoController : Controller
     {
 
         /// <summary>
         /// Constructor
         /// </summary>
-        protected readonly IEstadoCuentaRepository _EstadoCuentaRepository;
+        protected readonly IEstadoCuentaHistoricoRepository _EstadoCuentaRepository;
 
 
         /// <summary>
         /// 
         /// </summary>
         
-        public EstadoCuentaController(IEstadoCuentaRepository EstadoCuentaRepository)
+        public EstadoCuentaHistoricoController(IEstadoCuentaHistoricoRepository EstadoCuentaRepository)
         {
             _EstadoCuentaRepository = EstadoCuentaRepository;
 
@@ -38,16 +38,17 @@ namespace PagoOnLineBusiness.API.Controllers
 
         /// <summary>
         /// 
-  
+
 
         /// <returns></returns>
         [Produces("application/json")]
         [AllowAnonymous]
         [HttpGet]
         [Route("EstadoCuentaHistorico")]
-        public ActionResult EstadoCuentaHistorico( )
+        public ActionResult EstadoCuentaHistorico(string idcontribuyente, System.DateTime fdesde,System.DateTime fhasta,int retorno)
         {
-            var ret = _EstadoCuentaRepository.EstadoCuentaHistorico();
+            var ret = _EstadoCuentaRepository.EstadoCuentaHistorico( idcontribuyente,fdesde,fhasta,retorno );
+
 
             return Json(ret);
         }

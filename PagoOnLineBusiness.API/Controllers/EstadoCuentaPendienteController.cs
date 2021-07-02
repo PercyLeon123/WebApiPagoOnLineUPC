@@ -45,9 +45,9 @@ namespace PagoOnLineBusiness.API.Controllers
         [AllowAnonymous]
         [HttpGet]
         [Route("EstadoCuentaPendiente")]
-        public ActionResult EstadoCuentaPendiente()
+        public ActionResult EstadoCuentaPendiente(string idcontribuyente, int retorno)
         {
-            var ret = _EstadoCuentaPendienteRepository.EstadoCuentaPendiente();
+            var ret = _EstadoCuentaPendienteRepository.EstadoCuentaPendiente(idcontribuyente,retorno);
 
             return Json(ret);
         }

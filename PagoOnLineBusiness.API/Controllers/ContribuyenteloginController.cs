@@ -45,9 +45,9 @@ namespace PagoOnLineBusiness.API.Controllers
         [AllowAnonymous]
         [HttpGet]
         [Route("LoginContribuyente")]
-        public ActionResult logincontribuyente( )
+        public ActionResult logincontribuyente(string login, string contracena, int retorno)
         {
-            var ret = _ContribuyenteloginRepository.logincontribuyente();
+            var ret = _ContribuyenteloginRepository.logincontribuyente(login,contracena, retorno);
 
             return Json(ret);
         }

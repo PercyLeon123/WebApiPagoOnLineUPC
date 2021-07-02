@@ -40,7 +40,7 @@ namespace PagoOnLineBusiness.API
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IContribuyenteRepository, ContribuyenteRepository>();
             services.AddTransient<IContribuyenteloginRepository, ContribuyenteloginRepository>();
-            services.AddTransient<IEstadoCuentaRepository, EstadoCuentaRepository>();
+            services.AddTransient<IEstadoCuentaHistoricoRepository, EstadoCuentaHistoricoRepository>();
             services.AddTransient<IEstadoCuentaPendienteRepository, EstadoCuentaPendienteRepository>();
 
             // ----------------------------------------------------------------

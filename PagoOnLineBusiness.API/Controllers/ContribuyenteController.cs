@@ -38,6 +38,17 @@ namespace PagoOnLineBusiness.API.Controllers
 
         }
 
+        [Produces("application/json")]
+        [AllowAnonymous]
+        [HttpGet]
+        [Route("datosCont")]
+        public ActionResult datosCont()
+        {
+            var ret = _ContribuyenteRepository.datosCont();
+
+            return Json(ret);
+        }
+
         /// <summary>
         /// 
         /// </summary>
@@ -55,20 +66,6 @@ namespace PagoOnLineBusiness.API.Controllers
 
             return Json(ret);
         }
-
-
-        [Produces("application/json")]
-        [AllowAnonymous]
-        [HttpGet]
-        [Route("consulta")]
-        public ActionResult consulta(string idcontribuyente, int retorno)
-        {
-            var ret = _ContribuyenteRepository.consulta(idcontribuyente,retorno);
-
-            return Json(ret);
-        }
-
-    }
 
 
 }

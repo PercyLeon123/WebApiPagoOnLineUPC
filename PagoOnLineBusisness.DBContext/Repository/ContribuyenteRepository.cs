@@ -14,33 +14,29 @@ namespace PagoOnLineBusisness.DBContext.Repository
     public class ContribuyenteRepository : BaseRepository, IContribuyenteRepository
     {
 
+        public ResponseBase consulta(string codigo)
+        {
+            throw new NotImplementedException();
+        }
 
-        public ResponseBase consulta(string idcontribuyente, int retorno)
+        public ResponseBase datosCont()
         {
             var returnEntity = new ResponseBase();
-            var EntityContribuyentes = new List<EntityContribuyente>();
+            var entitiescontribuyentes = new List<EntityContribuyente>();
 
             try
             {
                 using (var db = GetSqlConnection())
                 {
                     const string sql = @"usp_datoscontribuyente";
+                    entitiescontribuyentes = db.Query<EntityContribuyente>(sql: sql, commandType: CommandType.StoredProcedure).ToList();
 
-                    var p = new DynamicParameters();
-                    p.Add(name: "@idcontribuyente",value:idcontribuyente,  dbType: DbType.String, direction: ParameterDirection.Input);                    
-                    p.Add(name: "@resultado", value:retorno,dbType: DbType.Int32, direction: ParameterDirection.Output);
-
-                    EntityContribuyentes = db.Query<EntityContribuyente>(sql: sql, param: p, commandType: CommandType.StoredProcedure).ToList();
-
-
-                    int idresultado = p.Get<int>("@resultado");
-
-                    if (idresultado > 0)
+                    if (entitiescontribuyentes.Count > 0)
                     {
                         returnEntity.isSuccess = true;
                         returnEntity.errorCode = "0000";
                         returnEntity.errorMessage = string.Empty;
-                        returnEntity.data = EntityContribuyentes;
+                        returnEntity.data = entitiescontribuyentes;
                        
                     }
                     else
@@ -62,6 +58,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
 
             return returnEntity;
         }
+
 
         public ResponseBase actualiza(EntityContribuyente contribuyente)
         {

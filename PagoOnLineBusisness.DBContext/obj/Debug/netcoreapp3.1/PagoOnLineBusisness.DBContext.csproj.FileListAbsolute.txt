@@ -22,3 +22,5 @@ C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContex
 C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.csproj.CopyComplete
 C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.dll
 C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.pdb
+C:\Users\MariaFernandez\Documents\upc\PPONL\New folder\PercyLeon123\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.dll
+C:\Users\MariaFernandez\Documents\upc\PPONL\New folder\PercyLeon123\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.pdb

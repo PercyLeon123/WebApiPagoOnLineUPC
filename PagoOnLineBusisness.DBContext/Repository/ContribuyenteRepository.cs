@@ -28,7 +28,7 @@ namespace PagoOnLineBusisness.DBContext.Repository
             {
                 using (var db = GetSqlConnection())
                 {
-                    const string sql = @"usp_datoscontribuyente";
+                    const string sql = @"usp_ListarContribuyentes";
                     entitiescontribuyentes = db.Query<EntityContribuyente>(sql: sql, commandType: CommandType.StoredProcedure).ToList();
 
                     if (entitiescontribuyentes.Count > 0)

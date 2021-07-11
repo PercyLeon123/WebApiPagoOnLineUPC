@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TPoGHqtz5yz5cwqrSxtWYGxB87XENKc4Si6McMkBgIUkioYSiXIHtZCBqBjbl1wCFebFhwHIp2wltRpPkSP5dA==",
+  "dgSpecHash": "9SFiG7fHwboTGjGlrdSgoIaYl+6Iw44x23FThcsf1v1II/AJZ4UpouQL+rQseOo8Cc3GWTS7whF5HxGlvBjq4w==",
   "success": true,
-  "projectFilePath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj",
+  "projectFilePath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

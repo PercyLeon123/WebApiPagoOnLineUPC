@@ -3,6 +3,7 @@ using PagoOnLineBusisness.DBContext.Base;
 using PagoOnLineBusisness.DBContext.Interface;
 using PagoOnLineBusisness.DBEntity.Base;
 using PagoOnLineBusisness.DBEntity.Model;
+using PagoOnLineBusisness.DBEntity.Response;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -60,6 +61,50 @@ namespace PagoOnLineBusisness.DBContext.Repository
                 }
             }
             catch(Exception ex)
+            {
+                returnEntity.isSuccess = false;
+                returnEntity.errorCode = "0001";
+                returnEntity.errorMessage = ex.Message;
+                returnEntity.data = null;
+            }
+
+            return returnEntity;
+        }
+
+        public ResponseBase Login(EntityLogin login)
+        {
+            var returnEntity = new ResponseBase();
+            var entityUser = new EntityLoginResponse();
+
+            try
+            {
+                using (var db = GetSqlConnection())
+                {
+                    const string sql = @"usp_user_login";
+
+                    var p = new DynamicParameters();
+                    p.Add(name: "@LOGINUSUARIO", value: login.LoginUsuario, dbType: DbType.String, direction: ParameterDirection.Input);
+                    p.Add(name: "@PASSWORDUSUARIO", value: login.PasswordUsuario, dbType: DbType.String, direction: ParameterDirection.Input);
+
+                    entityUser = db.Query<EntityLoginResponse>(sql: sql, param: p, commandType: CommandType.StoredProcedure).FirstOrDefault();
+
+                    if (entityUser != null)
+                    {
+                        returnEntity.isSuccess = true;
+                        returnEntity.errorCode = "0000";
+                        returnEntity.errorMessage = string.Empty;
+                        returnEntity.data = entityUser;
+                    }
+                    else
+                    {
+                        returnEntity.isSuccess = false;
+                        returnEntity.errorCode = "0000";
+                        returnEntity.errorMessage = string.Empty;
+                        returnEntity.data = null;
+                    }
+                }
+            }
+            catch (Exception ex)
             {
                 returnEntity.isSuccess = false;
                 returnEntity.errorCode = "0001";

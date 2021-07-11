@@ -10,5 +10,6 @@ namespace PagoOnLineBusisness.DBContext.Interface
     public interface IUserRepository
     {
         ResponseBase Insert(EntityUser user);
+        ResponseBase Login(EntityLogin login);
     }
 }

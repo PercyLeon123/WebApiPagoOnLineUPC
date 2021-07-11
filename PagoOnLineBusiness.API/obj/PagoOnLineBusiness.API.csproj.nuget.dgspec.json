@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj": {}
+    "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj": {}
   },
   "projects": {
-    "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj": {
+    "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj",
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj",
         "projectName": "PagoOnLineBusiness.API",
-        "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj",
-        "packagesPath": "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\",
-        "outputPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\obj\\",
+        "projectPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\PagoOnLineBusiness.API.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusiness.API\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jfaustor.COSAPI.COM.PE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,15 +25,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj": {
-                "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj"
+              "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj"
               }
             }
           }
@@ -45,6 +47,18 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "IdentityServer4": {
+              "target": "Package",
+              "version": "[4.1.2, )"
+            },
+            "IdentityServer4.AccessTokenValidation": {
+              "target": "Package",
+              "version": "[3.0.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"
@@ -68,21 +82,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj": {
+    "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
         "projectName": "PagoOnLineBusisness.DBContext",
-        "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
-        "packagesPath": "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\",
-        "outputPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\obj\\",
+        "projectPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\PagoOnLineBusisness.DBContext.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBContext\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jfaustor.COSAPI.COM.PE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,15 +107,14 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj": {
-                "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj"
+              "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj": {
+                "projectPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj"
               }
             }
           }
@@ -145,21 +161,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj": {
+    "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj",
+        "projectUniqueName": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj",
         "projectName": "PagoOnLineBusisness.DBEntity",
-        "projectPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj",
-        "packagesPath": "C:\\Users\\jfaustor.COSAPI.COM.PE\\.nuget\\packages\\",
-        "outputPath": "C:\\upcwwww\\BEProyectoPagoonline\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\obj\\",
+        "projectPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\PagoOnLineBusisness.DBEntity.csproj",
+        "packagesPath": "C:\\Users\\Tawa\\.nuget\\packages\\",
+        "outputPath": "D:\\notocar\\Apliaciones\\WebApiPagoOnLineUPC\\PagoOnLineBusisness.DBEntity\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\jfaustor.COSAPI.COM.PE\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Tawa\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -167,8 +186,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://packagesource": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "netstandard2.0": {
@@ -203,7 +221,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

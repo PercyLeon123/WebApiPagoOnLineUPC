@@ -14,7 +14,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
-
+using PagoOnLineBusiness.API.Config;
 
 namespace PagoOnLineBusiness.API
 {
@@ -32,10 +32,10 @@ namespace PagoOnLineBusiness.API
         {
 
             services.AddControllers();
-            services.AddSwaggerGen(c =>
-            {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "PagoOnLineBusiness.API", Version = "v1" });
-            });
+            //services.AddSwaggerGen(c =>
+            //{
+            //    c.SwaggerDoc("v1", new OpenApiInfo { Title = "PagoOnLineBusiness.API", Version = "v1" });
+            //});
 
             services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IContribuyenteRepository, ContribuyenteRepository>();
@@ -44,12 +44,85 @@ namespace PagoOnLineBusiness.API
             services.AddTransient<IEstadoCuentaPendienteRepository, EstadoCuentaPendienteRepository>();
 
             // ----------------------------------------------------------------
+            services.AddTransient<HttpClientAuthorizationDelegatingHandler>();
 
-            
             services.AddTransient<IHttpContextAccessor, HttpContextAccessor>();
 
+            // TODO: Configuration Section
+            services.Configure<PagoOnLineBusisness.DBEntity.Base.ConfigSettings>(Configuration.GetSection("ConfigSettings"));
+            PagoOnLineBusisness.DBEntity.Base.ConfigSettings config = Configuration.GetSection("ConfigSettings").Get<PagoOnLineBusisness.DBEntity.Base.ConfigSettings>();
+            AppSettingsProvider.config = config;
 
-            
+            services.AddCors(o => o.AddPolicy("MyPolicy", builder =>
+            {
+                builder.AllowAnyOrigin()
+                       .AllowAnyMethod()
+                       .AllowAnyHeader()
+                      ;
+            }));
+
+
+            services.AddAuthentication("Bearer")
+              .AddJwtBearer("Bearer", options =>
+              {
+                  options.Authority = AppSettingsProvider.config.UrlBaseIdentityServer;
+                  options.RequireHttpsMetadata = false;
+                  options.RefreshOnIssuerKeyNotFound = true;
+                  options.Audience = "API-APP-UPC";
+              });
+
+
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc(
+                    name: AppSettingsProvider.config.Version,
+                    new OpenApiInfo
+                    {
+                        Title = AppSettingsProvider.config.ApplicationName,
+                        Version = AppSettingsProvider.config.Version,
+                        Contact = new OpenApiContact()
+                        {
+                            Name = AppSettingsProvider.config.OrganizationName,
+                            Url = new System.Uri("https://www.upc.edu.pe/"),
+                            Email = "upc@upc.edu.pe",
+                        },
+                        Description = AppSettingsProvider.config.ApplicationDescription,
+
+                        License = new OpenApiLicense() { Name = AppSettingsProvider.config.OrganizationName, Url = new System.Uri("https://www.upc.edu.pe/") },
+                        TermsOfService = new System.Uri("https://www.upc.edu.pe/")
+                    });
+
+                c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+                {
+                    Description = @"Esta api usa Authorization  basada en JWT.-  
+                      Ingrese 'Bearer' [space] y luego el token de autenticación.
+                      Ejemplo: 'Bearer HJNX4354X...'",
+                    Name = "Authorization",
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
+                });
+
+                c.AddSecurityRequirement(new OpenApiSecurityRequirement()
+                  {
+                    {
+                      new OpenApiSecurityScheme
+                      {
+                        Reference = new OpenApiReference
+                          {
+                            Type = ReferenceType.SecurityScheme,
+                            Id = "Bearer"
+                          },
+                          Scheme = "oauth2",
+                          Name = "Bearer",
+                          In = ParameterLocation.Header,
+
+                        },
+                        new List<string>()
+                      }
+                    });
+            });
+
 
         }
                     

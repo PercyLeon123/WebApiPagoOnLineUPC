@@ -24,3 +24,15 @@ C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContex
 C:\upcwwww\BEProyectoPagoonline\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.pdb
 C:\Users\MariaFernandez\Documents\upc\PPONL\New folder\PercyLeon123\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.dll
 C:\Users\MariaFernandez\Documents\upc\PPONL\New folder\PercyLeon123\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.pdb
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\bin\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.deps.json
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\bin\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.dll
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\bin\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.pdb
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\bin\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.dll
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\bin\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.pdb
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.csprojAssemblyReference.cache
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.AssemblyInfoInputs.cache
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.AssemblyInfo.cs
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.csproj.CoreCompileInputs.cache
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.csproj.CopyComplete
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.dll
+D:\notocar\Apliaciones\WebApiPagoOnLineUPC\PagoOnLineBusisness.DBContext\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBContext.pdb

@@ -31,7 +31,7 @@ namespace PagoOnLineBusiness.API.Controllers
         /// <summary>
         /// 
         /// </summary>
-        
+
         public ContribuyenteController(IContribuyenteRepository ContribuyenteRepository)
         {
             _ContribuyenteRepository = ContribuyenteRepository;
@@ -58,8 +58,8 @@ namespace PagoOnLineBusiness.API.Controllers
         [Route("actualiza")]
         [HttpPost]
         [AllowAnonymous]
-        
-        
+
+
         public ActionResult actualiza(EntityContribuyente contribuyente)
         {
             var ret = _ContribuyenteRepository.actualiza(contribuyente);
@@ -67,5 +67,5 @@ namespace PagoOnLineBusiness.API.Controllers
             return Json(ret);
         }
 
-
+    }
 }

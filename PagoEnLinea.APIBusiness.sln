@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PagoOnLineBusiness.API", "PagoEnLinea.APIBusiness\PagoOnLineBusiness.API\PagoOnLineBusiness.API.csproj", "{3E9C5060-8A75-4963-897B-496525EF3F79}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PagoOnLineBusiness.API.IS", "PagoEnLinea.APIBusiness\PagoOnLineBusiness.API.IS\PagoOnLineBusiness.API.IS.csproj", "{573B8619-D274-40BD-B0CB-0AE5FFD24A45}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PagoOnLineBusisness.DBContext", "PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBContext\PagoOnLineBusisness.DBContext.csproj", "{3CB7210E-C87D-4222-8EFD-8D81C780DDAF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PagoOnLineBusisness.DBEntity", "PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\PagoOnLineBusisness.DBEntity.csproj", "{0DBBCDF3-1E0B-4EAA-BAB3-C9962F9EE299}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3E9C5060-8A75-4963-897B-496525EF3F79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E9C5060-8A75-4963-897B-496525EF3F79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E9C5060-8A75-4963-897B-496525EF3F79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E9C5060-8A75-4963-897B-496525EF3F79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{573B8619-D274-40BD-B0CB-0AE5FFD24A45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{573B8619-D274-40BD-B0CB-0AE5FFD24A45}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{573B8619-D274-40BD-B0CB-0AE5FFD24A45}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{573B8619-D274-40BD-B0CB-0AE5FFD24A45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CB7210E-C87D-4222-8EFD-8D81C780DDAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CB7210E-C87D-4222-8EFD-8D81C780DDAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CB7210E-C87D-4222-8EFD-8D81C780DDAF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CB7210E-C87D-4222-8EFD-8D81C780DDAF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DBBCDF3-1E0B-4EAA-BAB3-C9962F9EE299}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DBBCDF3-1E0B-4EAA-BAB3-C9962F9EE299}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DBBCDF3-1E0B-4EAA-BAB3-C9962F9EE299}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DBBCDF3-1E0B-4EAA-BAB3-C9962F9EE299}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1AC56CB6-3BB8-4C68-9CC6-38B04B1E63F1}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,16 @@
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.deps.json
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.AssemblyInfoInputs.cache
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.AssemblyInfo.cs
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.csproj.CoreCompileInputs.cache
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\Semana08BE\UPC.APIBusiness\UPC.APIBusiness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.deps.json
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\bin\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.AssemblyInfoInputs.cache
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.AssemblyInfo.cs
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\obj\Debug\netcoreapp3.1\PagoOnLineBusisness.DBEntity.csproj.CoreCompileInputs.cache
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.dll
+D:\Semana08BE\PagoEnLinea.APIBusiness\PagoOnLineBusisness.DBEntity\obj\Debug\netcoreapp3.1\UPC.APIBusiness.DBEntity.pdb
